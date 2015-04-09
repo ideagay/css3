@@ -1,0 +1,77 @@
+*{margin: 0;padding: 0;}
+html,body{width: 100%;height: 100%;}
+body{font-family: "Microsoft YaHei" sans-serif;font-size: 14px;color: #999;background-color: #333}
+a{text-decoration: none;color: inherit}
+.box{width: 800px;height: 500px;margin: 50px auto;}
+.link{width: 205px;height:230px;display: inline-block;margin: 0 20px;position: relative}
+.icon{display: block;width: 205px;height:180px;
+    transition:all 0.2s ease-out ;
+    -ms-transition:all 0.2s ease-out;
+    -webkit-transition:all 0.2s ease-out;
+    -o-transition:all 0.2s ease-out;
+    -moz-transition:all 0.2s ease-out;
+}
+.mission .icon{background: url("images/mission.png") no-repeat center;}
+.play .icon{background: url("images/play.png") no-repeat center;}
+.touch .icon{background: url("images/touch.png") no-repeat center;}
+.icon:hover{transform:rotate(360deg) scale(1.2);
+    -ms-transform:rotate(360deg) scale(1.2);
+    -moz-transform:rotate(360deg) scale(1.2);
+    -webkt-transform:rotate(360deg) scale(1.2);
+    -o-transform:rotate(360deg) scale(1.2);
+}
+.button{box-sizing: border-box;height: 50px;line-height: 50px;width: 180px;margin: 0 auto;position: relative;
+    font-family: Arial;
+    display: block;border: 2px solid rgba(255,255,255,0.8);padding-left: 20px;font-size: 18px;
+    color: #2DCB70;font-weight: 700;
+    background: url(images/allow.png) no-repeat 130px center;
+    transition:all 0.2s ease-out ;
+    -ms-transition:all 0.2s ease-out;
+    -webkit-transition:all 0.2s ease-out;
+    -o-transition:all 0.2s ease-out;
+    -moz-transition:all 0.2s ease-out;
+}
+.button:hover{border-color: #ffffff;background-position: 140px center;}
+
+.line{display: block;background:none;position: absolute;
+    transition:all 0.4s ease-out ;
+    -ms-transition:all 0.4s ease-out;
+    -webkit-transition:all 0.4s ease-out;
+    -o-transition:all 0.4s ease-out;
+    -moz-transition:all 0.4s ease-out;}
+.button:hover .line{background-color: #fff;}
+/*顶边*/
+.button .line-top{width: 0px;height: 2px;left: -110%;top:-2px;}
+.button:hover .line-top{width: 180px;left: -2px;}
+
+/*右边*/
+.button .line-right{width: 2px;height: 0px;right: -2px;top:-110%;}
+.button:hover .line-right{height: 50px;top:-2px;}
+
+/*底边*/
+.button .line-bottom{width: 0px;height: 2px;right: -110%;bottom:-2px;}
+.button:hover .line-bottom{width: 180px;right: -2px;}
+
+/*左边*/
+.button .line-left{width: 2px;height: 0px;left: -2px;bottom:-110%;}
+.button:hover .line-left{height: 50px;bottom: -2px;}
+
+.tip{background-color: #2DCB70;height: 40px;position: absolute;
+    padding: 0px 20px;font-size:18px;line-height: 40px;color: #ffffff;text-align: center;
+    top:130px;
+    opacity: 0;
+    border-radius: 4px;
+    text-transform:none;
+}
+.tip em{font-style: normal}
+.tip span{
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 6px solid transparent;
+    border-top-color: #2DCB70;
+    position: absolute;
+    left: 50%;
+    margin-left:-3px;
+    top:40px;
+}
